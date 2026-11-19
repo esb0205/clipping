@@ -1,6 +1,6 @@
 # clipfactory settings — copy to config/settings.yaml (`clipfactory init` does this for you)
 
-timezone: America/New_York
+timezone: Asia/Kolkata
 
 # ---------------------------------------------------------------- the daily quota
 clips_per_day: 3
@@ -32,7 +32,7 @@ discovery:
   lookback_hours: 48         # only consider uploads/VODs from the last N hours
   twitch_category_scan: true # also scan top GTA clips on Twitch (only for creators in creators.yaml unless creator_policy: open)
   creator_policy: allowlist  # allowlist | open
-  require_permission: false  # true = only clip creators marked permission: granted / program in creators.yaml
+  require_permission: true  # true = only clip creators marked permission: granted / program in creators.yaml
   min_source_minutes: 4      # skip shorts / tiny uploads
   max_source_hours: 14
 
